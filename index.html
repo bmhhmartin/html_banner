@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Banner</title>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        .rotateImage{
+            background: url(images/1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 600px;
+            width: 120px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="bannerParent">
+       <div class="1 rotateImage">
+            <img src="images/1.jpg" alt="image">
+       </div>
+       <div class="2 rotateImage">
+            <img src="images/2.jpg" alt="image">
+       </div>
+       <div class="3 rotateImage">
+            <img src="images/3.jpg" alt="image">
+       </div>
+       <div class="4 rotateImage">
+            <img src="images/4.jpg" alt="image">
+       </div>
+       <div class="5 rotateImage">
+            <img src="images/5.jpg" alt="image">
+       </div>
+       <div class="6 rotateImage">
+            <img src="images/6.jpg" alt="image">
+       </div>
+       <div class="7 rotateImage">
+            <img src="images/7.jpg" alt="image">
+       </div>
+       <div class="8 rotateImage">
+            <img src="images/8.jpg" alt="image">
+       </div>
+       <div class="9 rotateImage">
+            <img src="images/9.jpg" alt="image">
+       </div>
+       <div class="10 rotateImage">
+            <img src="images/10.jpg" alt="image">
+       </div>
+       <div class="11 rotateImage">
+            <img src="images/11.jpg" alt="image">
+       </div>
+       <div class="12 rotateImage">
+            <img src="images/12.jpg" alt="image">
+       </div>
+    </div>
+	<script>
+        var i = 1;
+        setInterval(function(){
+            $(".rotateImage").hide();
+            $("."+i).show();
+            i++;
+            if(i == 13){
+                i=1;
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
+
